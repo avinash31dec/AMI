@@ -1,0 +1,8 @@
+resource "aws_instance" "terraform_instance" {
+  ami           = "ami-006136adf2a2e0794"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Instance with Terraform."
+    Desc = "This image contains Terraform."
+  }
+}
